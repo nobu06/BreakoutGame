@@ -8,15 +8,20 @@ using UnityEngine;
 
 public class Block : MonoBehaviour {
 
+	private void OnCollisionEnter(Collision collision)
+	{
+        Destroy(gameObject);
+	}
+
 	//private void OnCollisionEnter(Collision collision)
 	//{
- //       Debug.Log("collided with a ball");
- //       Debug.Log("tag is" + collision.gameObject.tag.ToString());
+	//       Debug.Log("collided with a ball");
+	//       Debug.Log("tag is" + collision.gameObject.tag.ToString());
 
- //       if (collision.gameObject.tag == "Ball")
- //       {
- //           Destroy(gameObject);
- //       }
+	//       if (collision.gameObject.tag == "Ball")
+	//       {
+	//           Destroy(gameObject);
+	//       }
 	//}
 
 }
